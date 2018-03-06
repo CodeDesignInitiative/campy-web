@@ -49,6 +49,21 @@
         {{ $page->days }}
         @endslot
 
+        @slot('meals')
+        {{ $page->meals }}
+        @endslot
+
+        @slot('cost')
+        {{ $page->cost }}
+        @endslot
+
+        @slot('costlaptop')
+        {{ $page->costlaptop }}
+        @endslot
+
+        @slot('locationlink')
+        {{ $page->locationlink }}
+        @endslot
 
     @endcomponent
 
@@ -85,7 +100,9 @@
 
     @include('_partials.update')
 
+    @if ($page->timetable === 'yes')
     @include('_partials.timetable', ['width' => 'w-1/2'])
+    @endif
 
     @yield('content')   
   </div>
