@@ -9,14 +9,14 @@
  --}}       <link rel="icon" type="image/png" href="/img/favicon-128x128.png" sizes="32x32">
             <link rel="icon" type="image/png" href="/img/favicon-128x128.png" sizes="16x16">
         <!-- End: Favicons -->
-        
+
         <!-- Start: Open Graph -->
         <meta property="og:title" content="@yield('og:title')" /> <!-- Same title as in line 5 ? -->
         <meta property="og:description" content="@yield('og:description')" /> <!-- Same description as in line 14 ? -->
         <meta property="og:url" content="@yield('og:url')" />
         <meta property="og:image" content="@yield('og:image')" />
         <!-- End: Open Graph -->
-        
+
         <!-- Start: Twitter Card -->
         <meta name="twitter:card" content="@yield('twitter:card')">
         <meta name="twitter:site" content="@yield('twitter:site')">
@@ -25,7 +25,7 @@
         <meta name="twitter:description" content="@yield('twitter:description')"> <!-- Same description as in line 14 ? -->
         <meta name="twitter:image" content="@yield('twitter:image')">
         <!-- End: Twitter Card -->
-        
+
         <!-- Start: Other meta -->
         <meta name="description" content="@yield('description')">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -35,7 +35,7 @@
         <!-- Start: Styles -->
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
         <style>
-            @font-face{ 
+            @font-face{
                 font-family: 'Hans';
                 src: url('/fonts/hans_grotesque_regular.eot');
                 src: url('/fonts/hans_grotesque_regular.eot?#iefix') format('embedded-opentype'),
@@ -44,7 +44,7 @@
                  font-weight: 200;
                 }
 
-            @font-face{ 
+            @font-face{
                 font-family: 'Hans';
                 src: url('/fonts/hans_grotesque_bold.eot');
                 src: url('/fonts/hans_grotesque_bold.eot?#iefix') format('embedded-opentype'),
@@ -62,19 +62,20 @@
 				-ms-hyphens: auto;
                 hyphens: auto;
             }
+            @yield('styles')
         </style>
-        @yield('styles')
+
         <!-- End: Styles -->
-        
+
     </head>
     <body class="antialiased">
-    
+
         @include('_partials.navbar')
         <main>
             @yield('body')
         </main>
         @include('_partials.footer')
-        
+
         <!-- Start: Scripts -->
         <script src="https://cdn.jsdelivr.net/npm/lazysizes@4.0.1/lazysizes.min.js"></script>
         @include('_partials.scripts')
