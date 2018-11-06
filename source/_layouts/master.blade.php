@@ -9,14 +9,14 @@
  --}}       <link rel="icon" type="image/png" href="/img/favicon-128x128.png" sizes="32x32">
             <link rel="icon" type="image/png" href="/img/favicon-128x128.png" sizes="16x16">
         <!-- End: Favicons -->
-        
+
         <!-- Start: Open Graph -->
         <meta property="og:title" content="@yield('og:title')" /> <!-- Same title as in line 5 ? -->
         <meta property="og:description" content="@yield('og:description')" /> <!-- Same description as in line 14 ? -->
         <meta property="og:url" content="@yield('og:url')" />
         <meta property="og:image" content="@yield('og:image')" />
         <!-- End: Open Graph -->
-        
+
         <!-- Start: Twitter Card -->
         <meta name="twitter:card" content="@yield('twitter:card')">
         <meta name="twitter:site" content="@yield('twitter:site')">
@@ -34,7 +34,8 @@
         <!-- End: Other meta -->
 
         <!-- Start: Styles -->
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> -->
+        <link rel="stylesheet" type="text/css" href="/css/styles.css">
         <style>
             @font-face{
                 font-family: 'Hans';
@@ -45,7 +46,7 @@
                  font-weight: 200;
                 }
 
-            @font-face{ 
+            @font-face{
                 font-family: 'Hans';
                 src: url('/fonts/hans_grotesque_bold.eot');
                 src: url('/fonts/hans_grotesque_bold.eot?#iefix') format('embedded-opentype'),
