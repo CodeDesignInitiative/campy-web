@@ -33,21 +33,10 @@
         @yield('meta')
         <!-- End: Other meta -->
 
-        <!-- Start: Styles -->
-        <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> -->
-        <link rel="stylesheet" type="text/css" href="/css/styles.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-        <style>
+        <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
-            html,body,p {
-                font-family: 'Source Sans Pro';
-            }
-            .hyphens {
-                -webkit-hyphens: auto;
-                -moz-hyphens: auto;
-				-ms-hyphens: auto;
-                hyphens: auto;
-            }
+        <style>
             @yield('styles')
         </style>
         <!-- End: Styles -->
