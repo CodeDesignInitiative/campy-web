@@ -3,4 +3,4 @@
 PHP_VERSION=7.2
 
 [context.brand-deploy]
-command = "npm run production"
+command = "npm run production && cp _redirects build_production/_redirects"
