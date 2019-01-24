@@ -7,8 +7,8 @@ This is a community website, you are welcome to contribute.
 ## Tools used:
 
 - Static Site Generator: [Jigsaw (PHP, Laravel)](https://jigsaw.tighten.co)
-- Hosting: [Netlify](https://netlify.com)
-- Git: [Github](https://github.com)
+- Hosting: [Netlify](https://netlify.com), [Github](https://github.com)
+- Git: [git](https://git-scm.com)
 - CSS Framework: [Tailwind CSS (Utility-First)](https://tailwindcss.com)
 - Media Player: [Plyr (JavaScript)](https://plyr.io/)
 
