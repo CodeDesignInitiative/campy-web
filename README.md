@@ -25,7 +25,7 @@ Here is how to do that.
 
 ```bash    
 git clone git@github.com:CodeDesignInitiative/campy-web.git
-cd cdweb1801
+cd campy-web
 composer install && npm install
 npm run watch
 ```
